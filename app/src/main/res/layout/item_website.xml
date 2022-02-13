@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="website"
+            type="com.example.adesh.data.model.WebSiteModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="30dp"
+                android:id="@+id/ivEdit"
+                android:src="@drawable/ic_baseline_edit_24"
+                android:layout_gravity="end"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/website_name" />
+
+            <TextView
+                android:id="@+id/tvWebsiteName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{website.websiteName}" />
+
+            <TextView
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/web_site_url" />
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/tvWebsiteUrl"
+                android:text="@{website.websiteUrl}"
+                android:textColor="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/last_visited_data" />
+
+            <TextView
+                android:text="@{website.lastVisited}"
+                android:id="@+id/tvLastVisited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/created_on" />
+
+            <TextView
+                android:id="@+id/tvCreated"
+                android:text="@{website.createdOn}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

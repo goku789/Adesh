@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Adesh</string>
+    <string name="add_data">Add Data</string>
+    <string name="website_name">website name</string>
+    <string name="web_site_url">web site url</string>
+    <string name="last_visited_data">Last Visited Data</string>
+    <string name="created_on">Created On</string>
+    <string name="sort_by_name">Sort By Name</string>
+    <string name="sort_by_date">Sort By Date</string>
+</resources>
